@@ -1,0 +1,57 @@
+@use './../abstract/index' as *;
+
+  
+
+  .mePic{
+    width:100%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  
+  .div-michtext{
+    background-color: $primarycolor;
+    color: $fontBox;
+    padding: 20px 15px;
+    font-size: $fontweight3;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    p{
+      font-size: 30pt;
+      text-align: center;
+    }
+  }
+
+  .button-news{
+      float:right;
+  }
+  
+  #me{
+      margin-top: 100px;
+    h2{
+      text-align: right;
+      padding-right: 20px;
+      margin-bottom: 20px;
+    }
+
+  }
+
+  @media screen and (max-width: 800px) {
+    #me{
+      margin-top: 50px;
+    h2{
+      text-align: left;
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+
+  }
+  .div-michtext{
+
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+  }
+
+  }

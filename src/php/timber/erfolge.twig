@@ -1,0 +1,21 @@
+{# This template inherits from `base.twig` #}
+{% extends "/timber/base.twig" %}
+{% block content %}
+  <section id="erfolge">
+    <h2 class="headline">Erfolge</h2>
+    <div class="container">
+      {% for p in post %}
+        <a href="#">
+            <div class="card">
+                <div class="div-pic">
+                    <img class="cardPic" src="{{ p.thumbnail.src }}" alt="{{ p.thumbnail.alt }}">
+                </div>
+                <div class="div-erfindername">
+                    <p>{{ p.title }}</p>
+                </div>
+            </div>
+        </a>
+      {% endfor %}
+    </div>
+  </section>
+{% endblock %}

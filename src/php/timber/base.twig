@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Andy Huber</title>
+
+    <script type="module">
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js')
+    </script>
+
+    <link rel="stylesheet" href="sass/style.css" />
+
+    <meta name="description" content="Sie wollen neue grüne Erfindungen? Andy ist für sie da" />
+    <meta property="og:title" content="Andy Huber" />
+    <meta property="og:description" content="Sie wollen neue grüne Erfindungen? Andy ist für sie da" />
+    <meta property="og:image" content="https://www.andyhuber.com/images/AlexMayer_Logo.svg" />
+    <meta property="og:image:alt" content="Logo von Andy Huber" />
+    <meta property="og:locale" content="de_AT" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta property="og:url" content="https://www.andyhuber.com" />
+    <link rel="canonical" href="https://www.andyhuber.com" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    {{ function('wp_head') }}
+  </head>
+
+  <body>
+    {{ function('get_header') }}
+
+    <main>
+      {% block content %}
+        <!-- This will be overwritten by the content block in the inheriting .twig file -->
+      {% endblock %}
+    </main>
+    
+    {{ function('get_footer') }}
+    {{ function('wp_footer') }}
+  </body>
+</html>

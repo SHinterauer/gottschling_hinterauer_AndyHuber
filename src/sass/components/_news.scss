@@ -1,0 +1,111 @@
+@use './../abstract/index' as *;
+
+.newsPic{
+    height: 20rem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width:100%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  
+
+  
+  .divider{
+    display: flex;
+    flex-direction: row;
+    div{
+      width: 50%;
+  
+      ul{
+        li{
+            margin-bottom: 5px;
+            a{
+                text-decoration: none;
+                color: $headline;
+                font-size: $fontweight4;
+                font-weight: bold;
+            }
+            p{
+                font-size: $fontweight5;
+                padding-left: 10px;
+            }
+        }
+      }
+    }
+  }
+
+  .dividerNews{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .liNews{
+      width: 40%;
+      margin: 0 5% 2% 0;
+  
+      a{
+        text-decoration: none;
+        color: $headline;
+        font-size: $fontweight4;
+        font-weight: bold;
+      }
+  
+      p{
+          font-size: $fontweight5;
+          padding: 5px 0 0 10px;
+      }
+    }
+  }
+
+  .button-news{
+      float:right;
+      margin-right: 20px;
+  }
+  
+  #news{
+      margin-top: 100px;
+    h2{
+      text-align: right;
+      padding-right: 20px;
+      margin-bottom: 20px;
+    }
+
+  }
+
+  @media screen and (max-width: 800px) {
+    #news{
+      margin-top: 50px;
+    h2{
+      text-align: left;
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+
+  }
+  .divider{
+    display: flex;
+    flex-direction: row;
+    div{
+      width: 100%;
+  
+      ul{
+        li{
+            margin-bottom: 5px;
+            a{
+                text-decoration: none;
+                color: $headline;
+                font-size: $fontweight4;
+                font-weight: bold;
+            }
+            p{
+                font-size: $fontweight5;
+                padding-left: 10px;
+            }
+        }
+      }
+    }
+  }
+  
+  }

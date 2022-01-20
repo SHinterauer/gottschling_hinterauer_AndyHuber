@@ -1,0 +1,18 @@
+{# This template inherits from `base.twig` #}
+{% extends "/timber/base.twig" %}
+{% block content %}
+  <section id="me">
+      <div class="divider">
+          {% for p in post %}
+            <div class="div-michtext">
+                <p>{{ p.content }}</p>
+            </div>
+          {% endfor %}
+
+          <div class="div-padding noShow">
+
+              <img class="mePic" src="{{site.theme.link}}/images/binich.png" alt="Andy beim Schrauben">
+          </div>
+      </div>
+  </section>
+{% endblock %}

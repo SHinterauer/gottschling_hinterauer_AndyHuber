@@ -1,0 +1,18 @@
+@use './../abstract/index' as *;
+
+footer{
+    background-color: $footer;
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+.logos{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 20px;
+}

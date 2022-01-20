@@ -1,0 +1,16 @@
+{# This template inherits from `base.twig` #}
+{% extends "/timber/base.twig" %}
+{% block content %}
+  <section id="news">
+      <h2 class="headline">News</h2>
+      <ul class="dividerNews">
+        {% for p in post %}
+            <li class="liNews">
+                <a href="#">{{ p.title }}</a>
+                <p>{{ p.meta('kurzbeschreibung') }}</p>
+                <p>{{ p.content }}</p>
+            </li>
+        {% endfor %}
+      </ul>
+  </section>
+{% endblock %}
