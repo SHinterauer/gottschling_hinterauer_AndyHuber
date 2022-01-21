@@ -146,8 +146,10 @@
                             $about_query = new WP_Query('order=ASC&category_name=aboutme');
 
                             if ($about_query->have_posts()) {
-                                $about_query->the_post();
-                                echo the_content();
+                                while ($about_query->have_posts()) {
+                                    $about_query->the_post();
+                                    echo the_content();
+                                }
                             } else {
                                 echo "Erster Post demnächst...";
                             } ?>
